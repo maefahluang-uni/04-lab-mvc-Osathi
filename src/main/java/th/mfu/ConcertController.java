@@ -34,7 +34,7 @@ public class ConcertController {
     @GetMapping("/concerts")
     public String listConcerts(Model model) {
         // TODO: add concerts to model
-        model.addAttribute("concert", concerts.values());
+        model.addAttribute("concerts", concerts.values());
         // TODO: return a template to list concerts
         return "list-concert";
     }
